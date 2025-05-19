@@ -2,8 +2,8 @@
 title: "Crafting My Art 🖼️"
 author: "Joshua Ross"
 date: "2024-04-19"
-description = "A Guide To My Dev Environment."
-tags = [coding,scripting,windows,Linux,hardware]
+description: "A Guide To My Dev Environment."
+tags: [coding, scripting, windows, Linux, hardware]
 ---
 
 # Introduction 
@@ -15,69 +15,68 @@ tags = [coding,scripting,windows,Linux,hardware]
 The First Item on the list is good ole Homebrew. I started using this [Package Manager](https://en.wikipedia.org/wiki/Package_manager) around 2019 when working at a former job of mine. At the time I was using a MacBook Pro as my work computer and wanted to find a way to install apps without needing to find the site after some searching was able to find homebrew and was loving and the access to other apps. In this next step, I'm going to show you how you can install it.
 
 ### How To Install
+
 **This Package Manager only works on MacOS and Linux.**
 
-{{< collapse summary="Instructions" openByDefault=false >}}
 The first step is to head over to the [Homebrew](https://brew.sh/) website.
 
-* When you arrive there you should see this command.
+When you arrive there you should see this command:
+
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
- **NOTE:** You will need to make sure Git is installed.
 
-* After this is all done it will spit out the next steps to do after. It is best to follow the steps. I will show you how to add homebrew to your Linux or MacOS Shell. 
-* For MacOS this is done for you by the script itself.
-* For Linux, you can run this command.
+**NOTE:** You will need to make sure Git is installed.
+
+After this is all done it will spit out the next steps to do after. It is best to follow the steps. I will show you how to add homebrew to your Linux or MacOS Shell.
+
+- For MacOS this is done for you by the script itself.
+- For Linux, you can run this command:
+
 ```bash
 echo 'eval "$(</home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc
 ```
 
-* After that is all done you can install whatever program that is in their repo.
+After that is all done you can install whatever program that is in their repo.
 
-E.g. Being
+E.g.
 
 ```bash
 brew install wget
 ```
-This will install wget. Some apps may need to be added to your profile so the system knows the **PATH**.
-{{</collapse>}}
 
+This will install wget. Some apps may need to be added to your profile so the system knows the **PATH**.
 
 Well, this is all for **Homebrew**.
 
 ## WinGet
 
-winget, like homebrew winget is a Package Manager but for Windows. When doing dev work on my Windows desktop I base a lot of my script to install stuff around this package manager. Mainly being a neovim install script located in my [dotfiles](https://github.com/ross-jm/dotfiles) repo. But enough about that let's see how you install it.
+winget, like homebrew, is a Package Manager but for Windows. When doing dev work on my Windows desktop I base a lot of my script to install stuff around this package manager. Mainly being a neovim install script located in my [dotfiles](https://github.com/ross-jm/dotfiles) repo. But enough about that let's see how you install it.
 
 ### How To Install
 
-
-{{< collapse summary="Instructions" openByDefault=false >}}
 - Check to see if it's installed by doing a 
 
 ```powershell
 winget
 ```
 
-if it returns nothing then it is not installed and you can follow the next steps. If it it does you can try installing something by doing something like
+If it returns nothing then it is not installed and you can follow the next steps. If it does you can try installing something by doing something like
 
 ```powershell
 winget install JanDeDobbeleer.OhMyPosh -s winget
 ```
 
-There is a chance that it may be installed. But is not installed correctly. In that case follow these steps.
+There is a chance that it may be installed. But is not installed correctly. In that case follow these steps:
 
-Search for the store as shown below.
-![open-microsoft-store](assets/img/open-microsoft-store.png)
-
-After that type in winget as shown below
-![search-for-winget-in-microsoft-store](assets/img/search-for-winget-in-microsoft-store.png)
+- Search for the store as shown below.
+- ![open-microsoft-store](assets/img/open-microsoft-store.png)
+- After that type in winget as shown below
+- ![search-for-winget-in-microsoft-store](assets/img/search-for-winget-in-microsoft-store.png)
 
 From there just install or wait for it to update as sometimes on new installs it does need to update itself.
-After all is said and done you can start installing stuff or even try and write a script with it. Try looking at [winstall](https://winstall.app) for apps that you can download.
-{{</collapse>}}
 
+After all is said and done you can start installing stuff or even try and write a script with it. Try looking at [winstall](https://winstall.app) for apps that you can download.
 
 ## VSCode
 
@@ -85,35 +84,32 @@ I use VSCode on the daily. I'm even using it to write this blog post. I mainly u
 
 ### How To Install
 
-{{< collapse summary="Instructions" openByDefault=false >}}
-* **Method 1: Installer Package.** `Universal`
-    * Head to the website you can get there easily by clicking on the header for VSCode. Find the OS you're using and then install it that way.
+- **Method 1: Installer Package.** `Universal`  
+  Head to the website you can get there easily by clicking on the header for VSCode. Find the OS you're using and then install it that way.
 
-* **Method 2: winget** `Windows Only`
+- **Method 2: winget** `Windows Only`
 
-```powershell
-winget install Microsoft.VisualStudioCode
-```
+    ```powershell
+    winget install Microsoft.VisualStudioCode
+    ```
 
-* **Method 3: Homebrew**  `MacOS only as it is a cask install.`
+- **Method 3: Homebrew**  `MacOS only as it is a cask install.`
 
-```
-brew install --cask visual-studio-code
-```
-{{</collapse>}}
-
+    ```bash
+    brew install --cask visual-studio-code
+    ```
 
 After you've installed VSCode you can set up the environment how you would like. With theme, icons, and extensions. The ones I highly recommend are listed below.
 
 ### Visual Studio Code Extensions
 
-* [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
-* [CodeSnap](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
-* [Grammarly](https://marketplace.visualstudio.com/items?itemName=znck.grammarly)
-* [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-* [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
-* [Material Theme Icons](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme-icons)
-* [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
+- [CodeSnap](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
+- [Grammarly](https://marketplace.visualstudio.com/items?itemName=znck.grammarly)
+- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
+- [Material Theme Icons](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme-icons)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 These are the ones I make sure are always installed or synced when I setup a new machine.
 
@@ -123,90 +119,87 @@ LazyVim is a distro of [NeoVim](https://neovim.io/) a highly extensible and cust
 
 ### How To Install
 
-- **Method 1: Windows**
-
-
-{{< collapse summary="Instructions" openByDefault=false >}}
-
+#### Method 1: Windows
 
 - **Install NeoVim**
 
-```pwsh
-winget install Neovim.Neovim
-```
+    ```powershell
+    winget install Neovim.Neovim
+    ```
 
 - **Make a backup of your current Neovim files:**
-```powershell
-# required
-Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.bak
 
-# optional but recommended
-Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
-```
+    ```powershell
+    # required
+    Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.bak
 
-* **Clone the starter:**
-```powershell
-git clone https://github.com/LazyVim/starter $env:LOCALAPPDATA\nvim
-```
+    # optional but recommended
+    Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
+    ```
+
+- **Clone the starter:**
+
+    ```powershell
+    git clone https://github.com/LazyVim/starter $env:LOCALAPPDATA\nvim
+    ```
 
 - **Remove the `.git` folder, so you can add it to your own repo later**
-```powershell
-Remove-Item $env:LOCALAPPDATA\nvim\.git -Recurse -Force
-```
+
+    ```powershell
+    Remove-Item $env:LOCALAPPDATA\nvim\.git -Recurse -Force
+    ```
 
 - **Start Neovim!**
-```pwsh
-nvim
-```
-{{</collapse>}}
 
+    ```powershell
+    nvim
+    ```
 
-
-
-- **Method 2: Linux/MacOS**
-{{< collapse summary="Instructions" openByDefault=false >}}
+#### Method 2: Linux/MacOS
 
 - **Make a backup of your current Neovim files:**
-```
-# required
-mv ~/.config/nvim{,.bak}
 
-# optional but recommended
-mv ~/.local/share/nvim{,.bak}
-mv ~/.local/state/nvim{,.bak}
-mv ~/.cache/nvim{,.bak}
-```
+    ```bash
+    # required
+    mv ~/.config/nvim{,.bak}
+
+    # optional but recommended
+    mv ~/.local/share/nvim{,.bak}
+    mv ~/.local/state/nvim{,.bak}
+    mv ~/.cache/nvim{,.bak}
+    ```
 
 - **Clone the starter**
-```
-git clone https://github.com/LazyVim/starter ~/.config/nvim
-```
+
+    ```bash
+    git clone https://github.com/LazyVim/starter ~/.config/nvim
+    ```
 
 - **Remove the `.git` folder, so you can add it to your own repo later**
-```
-rm -rf ~/.config/nvim/.git
-```
+
+    ```bash
+    rm -rf ~/.config/nvim/.git
+    ```
 
 - **Start Neovim!**
-```
-nvim
-```
-{{</collapse>}}
 
-That is how you can install **LazyVim** from their template if you want to do it with my template on the `git clone` step all you would need to do is change the repo. I can show you below for the 3 OSs.
+    ```bash
+    nvim
+    ```
 
-{{< collapse summary="Instructions" openByDefault=false >}}
--  **Windows**
-```
-git clone https://github.com/ross-jm/lazyvim-config.git $env:LOCALAPPDATA\nvim 
-```
+That is how you can install **LazyVim** from their template. If you want to do it with my template, on the `git clone` step all you would need to do is change the repo. Here’s how for the 3 OSs:
+
+- **Windows**
+
+    ```powershell
+    git clone https://github.com/ross-jm/lazyvim-config.git $env:LOCALAPPDATA\nvim 
+    ```
 
 - **Linux/MacOS**
-```
-git clone https://github.com/ross-jm/lazyvim-config.git ~/.config/nvim
-```
-{{</collapse>}}
 
+    ```bash
+    git clone https://github.com/ross-jm/lazyvim-config.git ~/.config/nvim
+    ```
 
 Then remove the `.git` folder so you can customize it to your liking and push it to your own GitHub account.
 
@@ -217,43 +210,41 @@ Git is a distributed version control system primarily used for tracking changes 
 With that being said I use git on the daily both at work and at Home. Heck, I'm even going to use it after this post to push the changes to the main branch so you can see this post. I've used **Git** for years on a nondev basis but as of a few years back, I got more into making stuff and posting it on **GitHub** so people could see what I do and even use it. It's always a nice thing when someone sees some code of yours and is like wow this is nice. But let's get into the fun part of how to install it. Which could not be easier.
 
 ### How To Install
-{{< collapse summary="Instructions" openByDefault=false >}}
-- **Method 1: Installer File** `Semi-Universal`
-    - Go to the Git website by clicking on the **Git** header. After you get to the site you can click the Monitor to get to the downloads.
-    - On Windows, it will download an `.exe` file, and on Linux, it will give you instructions on how to install it via the OS's native package manager.
+
+- **Method 1: Installer File** `Semi-Universal`  
+  Go to the Git website by clicking on the **Git** header. After you get to the site you can click the Monitor to get to the downloads.
+  On Windows, it will download an `.exe` file, and on Linux, it will give you instructions on how to install it via the OS's native package manager.
 
 - **Method 2: Homebrew** `Linux/MacOS`
-```
-brew install git
-```
+
+    ```bash
+    brew install git
+    ```
 
 - **Method 3: WinGet** `Windows`
-```
-winget install Git.Git
-```
-{{</collapse>}}
+
+    ```powershell
+    winget install Git.Git
+    ```
 
 ### Configure `.gitconfig` file
+
 After that is done you need to do one important step. As the header says we need to configure the `.gitconfig` file. That can be done with the command below and replacing it with your info. Preferably with the email you used with your Git Maintainer.
 
-```
+```bash
 git config --global user.name "Your Name" # name you want on the commits
 git config --global user.email "your.email@example.com" # email used on the account or you're doing local git repos whatever email you want attached.
 git config --global core.editor "your-preferred-editor" # preferred editor that git uses.
 ```
 
 Change the info and paste those commands into your terminal and after you run them in your home directory you will see a file called `.gitconfig`. You can also do a 
-```
+
+```bash
 git config --list
 ```
+
 To check your config.
 
 # Epilogue
 
 Well, Ladies and Gents, This is a wrap. Thank you for staying with me this time as I tell you about the software & hardware I use daily to do my dev work. This was a fun post to write and I'm glad I got the chance to write it.
-
-
-
-
-
-
