@@ -69,10 +69,10 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 There is a chance that it may be installed. But is not installed correctly. In that case follow these steps.
 
 Search for the store as shown below.
-![open-microsoft-store](./open-microsoft-store.png)
+![open-microsoft-store](/assets/images/open-microsoft-store.png)
 
 After that type in winget as shown below
-![search-for-winget-in-microsoft-store](./search-for-winget-in-microsoft-store.png)
+![search-for-winget-in-microsoft-store](/assets/images/search-for-winget-in-microsoft-store.png)
 
 From there just install or wait for it to update as sometimes on new installs it does need to update itself.
 After all is said and done you can start installing stuff or even try and write a script with it. Try looking at [winstall](https://winstall.app) for apps that you can download.
@@ -119,7 +119,7 @@ These are the ones I make sure are always installed or synced when I setup a new
 
 ## LazyVim
 
-LazyVim is a distro of [NeoVim](http://neovim.io/) a highly extensible and customizable text editor based on the popular Vim editor. It's designed to improve upon Vim's limitations while retaining its powerful editing capabilities and modal interface. I chose LazyVim as I use Vim all the time in Linux and Windows and wanted something a little more flexible when I didn't feel like opening VSCode. LazyVim has videos all over YouTube and one day I decided to watch some and decided to try it out after talking to a Co-Worker of mine. I do not regret it one bit as LazyVim has helped me code better at times and understand how things work. It also keeps me away from the mouse. I even have my [LazyVim Config](https://github.com/ross-jm/lazyvim-config) on GitHub if you want to use it. Enough of the talk though Let's show how you can install it.
+LazyVim is a distro of [NeoVim](https://neovim.io/) a highly extensible and customizable text editor based on the popular Vim editor. It's designed to improve upon Vim's limitations while retaining its powerful editing capabilities and modal interface. I chose LazyVim as I use Vim all the time in Linux and Windows and wanted something a little more flexible when I didn't feel like opening VSCode. LazyVim has videos all over YouTube and one day I decided to watch some and decided to try it out after talking to a Co-Worker of mine. I do not regret it one bit as LazyVim has helped me code better at times and understand how things work. It also keeps me away from the mouse. I even have my [LazyVim Config](https://github.com/ross-jm/lazyvim-config) on GitHub if you want to use it. Enough of the talk though Let's show how you can install it.
 
 ### How To Install
 
