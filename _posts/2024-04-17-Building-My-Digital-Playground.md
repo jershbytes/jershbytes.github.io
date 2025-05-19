@@ -1,10 +1,10 @@
-+++
+---
 author: Joshua Ross
 title: "Building My Digital Playground 🛝"
 date: "2024-04-17"
 description: "Exploring the World of Homelabs!"
 tags: [Homelab,software,hardware,virtualization]
-+++
+---
 
 # Introduction
 
